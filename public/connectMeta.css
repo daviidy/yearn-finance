@@ -1,0 +1,82 @@
+/*! CSS Used from: https://yaerm.finance/connect/css/index.css */
+.permissions-connect-header__title,.permissions-connect-choose-account__text-blue,.permissions-connect__page-count,.permissions-connect-header__text,.permissions-connect-header__subtitle,.permissions-connect-footer__text{font-family:'Montserrat', sans-serif;;font-style:normal;font-weight:normal;color:#24272a;}
+.permissions-connect-header__title{font-size:24px;}
+.permissions-connect-choose-account__text-blue,.permissions-connect__page-count,.permissions-connect-header__text,.permissions-connect-header__subtitle,.permissions-connect-footer__text{font-size:14px;}
+html,body,div,span,img,form{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+button{border-style:none;cursor:pointer;}
+button::-moz-focus-inner{border:none;}
+*{box-sizing:border-box;}
+html,body{font-family:'Montserrat', sans-serif;, Arial;color:#4d4d4d;font-weight:400;width:100%;height:100%;margin:0;padding:0;font-size:16px;overflow:auto;}
+html{min-height:500px;}
+.mouse-user-styles button:focus,.mouse-user-styles input:focus,.mouse-user-styles textarea:focus{outline:none;}
+#app-content{overflow-x:hidden;height:100%;display:flex;flex-direction:column;background:#f7f7f7;}
+@media screen and (max-width: 575px){
+#app-content{background-color:#fff;}
+}
+.button{font-weight:400;font-size:0.875rem;font-weight:500;font-family:'Montserrat', sans-serif;, Arial;line-height:1.25rem;padding:0.75rem
+1rem;display:flex;justify-content:center;align-items:center;box-sizing:border-box;border-radius:6px;width:100%;transition:border-color 0.3s ease, background-color 0.3s ease;}
+.button[disabled]{cursor:auto;opacity:0.5;pointer-events:none;}
+.btn-default{color:#6a737d;border:2px solid #b3b3b3;}
+.btn-default:hover{border-color:#6a737d;}
+.btn-default:active{background:#fbfbfc;border-color:#6a737d;}
+.btn-primary{color:#fff;border:2px solid #037dd6;background-color:#037dd6;}
+.btn-primary:hover{border-color:#0372c3;background-color:#0372c3;}
+.btn-primary:active{background:#0260a4;border-color:#0260a4;}
+.btn-primary[disabled]{border-color:#b0d7f2;background-color:#b0d7f2;}
+button[disabled]{cursor:not-allowed;opacity:0.5;}
+.network-droppo{right:2px;}
+@media screen and (min-width: 576px){
+.network-droppo{right:calc(((100% - 85vw) / 2) + 2px);}
+}
+@media screen and (min-width: 769px){
+.network-droppo{right:calc(((100% - 80vw) / 2) + 2px);}
+}
+@media screen and (min-width: 1281px){
+.network-droppo{right:calc(((100% - 65vw) / 2) + 2px);}
+}
+.app{display:flex;flex-direction:column;height:100%;overflow-x:hidden;position:relative;align-items:center;}
+.main-container-wrapper{display:flex;justify-content:center;flex:1 0 auto;min-height:0;width:100%;}
+@media screen and (max-width: 575px){
+.main-container-wrapper{flex:1;}
+}
+.permissions-connect-choose-account{display:flex;flex-direction:column;align-items:center;width:100%;margin-left:auto;margin-right:auto;height:100%;}
+@media screen and (min-width: 576px){
+.permissions-connect-choose-account{width:426px;}
+}
+.permissions-connect-choose-account__text-blue{color:#037dd6;cursor:pointer;}
+.permissions-connect-choose-account__accounts-list{flex:2 1 0;width:92%;max-height:-webkit-max-content;max-height:-moz-max-content;max-height:max-content;border:1px solid
+#d0d5da;box-sizing:border-box;border-radius:8px;margin-top:8px;overflow-y:auto;}
+.permissions-connect-choose-account__accounts-list-header--one-item{display:flex;flex:0;margin-top:36px;width:100%;padding-left:15px;padding-right:17px;}
+.permissions-connect-choose-account__accounts-list-header--one-item{justify-content:flex-end;}
+.permissions-connect-choose-account__account-info-wrapper{display:flex;justify-content:flex-start;align-items:center;min-width:0;}
+.permissions-connect-choose-account__account{display:flex;align-items:center;padding:16px;border-bottom:1px solid #d2d8dd;justify-content:space-between;}
+.permissions-connect-choose-account__account:last-of-type{border-bottom:none;}
+.permissions-connect-choose-account__account:hover{background:#f2f3f4;cursor:pointer;}
+.permissions-connect-choose-account__footer-container{width:100%;flex:1;display:flex;flex-direction:column;justify-content:flex-end;}
+@media screen and (min-width: 576px){
+.permissions-connect-choose-account__footer-container{flex-direction:column-reverse;justify-content:space-between;padding-bottom:20px;}
+}
+.permissions-connect-choose-account__bottom-buttons{display:flex;justify-content:space-between;width:100%;padding-top:16px;padding-bottom:16px;margin-top:8px;border-top:1px solid #d6d9dc;}
+@media screen and (min-width: 576px){
+.permissions-connect-choose-account__bottom-buttons{border-top:none;}
+}
+.permissions-connect-choose-account__bottom-buttons button{width:124px;}
+.permissions-connect-choose-account__bottom-buttons .btn-default{background:white;margin-left:16px;}
+.permissions-connect-choose-account__bottom-buttons .btn-primary{margin-right:16px;}
+.permissions-connect{width:100%;height:100%;position:relative;background:white;display:flex;flex-direction:column;}
+.permissions-connect__top-bar{display:grid;grid-template-columns:1fr 1fr;padding:16px 16px 0 16px;align-items:center;}
+.permissions-connect__page-count{font-size:12px;color:#6a737d;grid-column:2;justify-self:end;font-weight:bold;line-height:21px;}
+.permissions-connect-header{display:flex;flex:0;flex-direction:column;justify-content:center;width:92%;}
+.permissions-connect-header__icon{display:flex;flex-direction:column;align-items:center;}
+.permissions-connect-header__title{text-align:center;color:#24292e;margin-top:14px;}
+.permissions-connect-header__text,.permissions-connect-header__subtitle{text-align:center;color:#6a737d;}
+.permissions-connect-header__text{width:100%;text-overflow:ellipsis;overflow:hidden;direction:rtl;}
+.permissions-connect-header__subtitle{margin-top:4px;}
+.permissions-connect-footer{display:flex;flex-direction:column;width:100%;align-items:center;}
+.permissions-connect-footer__text{font-size:12px;line-height:17px;color:#6a737d;display:flex;margin-top:10px;}
+.permissions-connect-footer__text--link{color:#037dd6;margin-left:4px;cursor:pointer;}
+.icon-border{border-radius:50%;border:1px solid #f2f3f4;background:#fff;display:flex;justify-content:center;align-items:center;}
+/*! CSS Used from: Embedded */
+.type_enter{display:flex;justify-content:center;}
+.type_enter button{height:30px;width:110px;margin:15px;}
+.type_enter .btn-default{background:#fff;}
