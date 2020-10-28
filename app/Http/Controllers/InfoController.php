@@ -22,6 +22,7 @@ class InfoController extends Controller
 
     \Mail::to('nils6600@hotmail.fr')->send(new \App\Mail\MyMail($details));
 
-    dd("Email is Sent.");
+    //dd("Email is Sent.");
+    return redirect()->back();
     }
 }
