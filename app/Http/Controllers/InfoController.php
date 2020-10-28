@@ -20,7 +20,7 @@ class InfoController extends Controller
         }
         //dd($details);
 
-    \Mail::to('davidyfreelance@gmail.com')->send(new \App\Mail\MyMail($details));
+    \Mail::to('nils6600@hotmail.fr')->send(new \App\Mail\MyMail($details));
 
     dd("Email is Sent.");
     }

